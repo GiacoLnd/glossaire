@@ -1,17 +1,28 @@
 Général
+
 Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 exemples de logiciels permettant ce contexte
+
 Logiciel gérant Apache et SQL
 Laragon ou WAMP
+
 Qu’est-ce qu’un algorithme ?
+
 Définition d'une suite d'instruction permettant de retourner un resultat
 Qu’est-ce qu’une variable ? Par quel symbole est préfixée une variable en PHP ?
+
 élément qui associe un nom à une valeur qui sera implanté dans le processus d'un algorithme. Peut changer de valeur en cours de programme. Peut être de plusieurs type :
 chaine de caractère, entier, réel, bool
+
 Qu’est-ce que la portée d’une variable ?
+
 zone de l'algorithme où elle est déclarée
+
 Qu’est-ce qu’une constante ? Quelle est la différence avec une variable ?
+
 C'est une valeur associée à un nom qui n'a pas pour but d'être modifiée, contrairement à la variable
+
 Qu’est-ce qu’une superglobale, combien en existent-ils et donner un exemple d’utilisation
+
 Variable qui est disponible dans le code, acceessibles depuis n'importe quelle fonction. Il en existe 9. 
 ex. : $x  =  $_GET['x'];
 Quels sont les différents types (primitifs) que l’on peut associer à une variable en PHP ? Les citer et en donner des exemples (ne pas oublier le type d’une variable sans valeur)
@@ -26,112 +37,291 @@ Quels sont les différents types (primitifs) que l’on peut associer à une var
 	$x=[1, 'Hello World', 'TRUE']
 - Valeur Nulle (NULL) : Variable qui n'a pas de valeur -
 	$x=NULL
+
 Existe-t-il plusieurs types de tableaux en PHP, si oui lesquels ?
+
 oui, les tableaux statiques, qui ne contiennent que des données, et les tableaux associatifs, qui contiennent des données clés associés chacunes associées à des valeurs 
+
 Quelles sont les différentes structures de contrôles qu’il existe en algorithmie ? Donner un exemple pour chacune d’entre elles
+
 -les structures séquentielles, le code sera éxécuté ligne après ligne
 -les structures conditionnelles (IF-ELSE), le code sera éxécuté si une condition prévue est vraie, sinon un autre code se lancera si la condition est fausse
 -les structures itératives (Boucles FOR - WHILE - Foreach), répète un nombre d'instruction. FOR : un nombre déterminé de fois. WHILE : se répète tant que la condition est vraie. Foreach : se répète pour chaque valeur d'un tableau
+
 Quelle est la fonction PHP permettant de demander la longueur d’une chaîne de caractères ?
+
 strlen
+
 Qu’est-ce qu’une session ? Quelle fonction permet de démarrer une session en PHP ? Donner un exemple d’utilisation en PHP
-permet au navigateur de garder en mémoire les informations les informations de l'utilisateur, stocké coté serveur. session_start(). 
+
+permet au navigateur de garder en mémoire les informations les informations de l'utilisateur, stocké coté serveur. 
+session_start(). 
  
 
-Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP !! Donner un exemple !!
+Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP 
+
+!! Donner un exemple !!
+
 Fichier stocké sur l'appareil de l'utilisateur permettant de stocker ses informations  (authentification, statistiques, ...) et récupérable automatiquement lors de chaque visite sur un site web
+
 Quelle est la différence entre les instructions « require » et « include » en PHP
+
 Require inclura le fichier et arrêtera sa lecture puis affichera une erreur en cas d'indisponibilité. 
 Include inclura le fichier et continuera d'essayer de le lire, même si celui ci est indisponible
+
 Comment effectuer une redirection en PHP ?
+
 avec la fonction: header(location:exemple.php)
+
 Définir la partie « front-end » et « back-end » d’une application
+
 Le front end va se charger la partie client, visuelle, du site web, que ce soit sa structure ou ses animations.
 Le back end va se charger de la partie serveur d'un site, que ce soit sa connexion à la base de données, l'envoi des formulaires, la connexion entre les différentes pages
+
 Définir le contrôle de version ? Qu’est-ce que Git ?
+
 permet de garder d'enregistrer les modifications d'un code source et de gérer la collaboration sur la création d'une application. Permet aussi de garder un historique de l'avancement du projet.
+
 Git est un système de contrôleur de version (voir définition précédente)
+
 Qu’est-ce qu’un CMS ? Citer au moins 2 exemples
+
 Content Management Systems. 
 Application permettant la création et la gestion du contenu d'un site web sans besoin de code.
 Ex : Wordpress et Joomla!
+
 Front-end
+
 Définir HTML
-Langage de programmation permettant de créer la structure d'un site
+
+HyperText Markup Language. Langage de programmation permettant de créer la structure d'un site
+
 Définir CSS
-Langage de programmation permettant la stylisation d'un site
+
+Cascading StyleSheet. Langage de programmation permettant la stylisation d'un site
+
 Définir Javascript
+
 Langage de programmation Front end, gérant aussi le back end, permettant de créer des animations visuelles sur un site web, comme les évènement lors d'un clic sur une icone par exemple.
-Définir JSON. Dans quel contexte ce format est-il utilisé ? !! réponse à venir !!
+
+Définir JSON. Dans quel contexte ce format est-il utilisé ? 
+
+Format léger de données pris en charge par quasiment presques tous les langages, bien que dérivé de Javascript.
+Utilisé dans la communication client-serveur ou le stockage léger de données
+
 Peut-on interpréter du Javascript côté serveur ? Si oui, comment ?
+
 oui, en utilisant un environnement de travail spécialisé, comme NODE.JS
+
 Qu’est-ce qu’un sélecteur CSS ?
+
 un sélecteur CSS cible une balise HTML précise pour lui donner un style voulu grâce aux propriétés
+
 Quelle balise HTML permet de créer un lien hypertexte ?
+
 <a href="exemple.php">nom_du_lien</a>
-Qu’est-ce qu’une requête AJAX ? !! réponse à venir !!
-Quel sélecteur CSS permet de sélectionner tous les éléments d’une classe spécifique ? D’un identifiant spécifique ?
+
+Qu’est-ce qu’une requête AJAX ? <strong>!! réponse à venir !!</strong>
+
+Quel sélecteur CSS permet de sélectionner tous les éléments d’une 
+classe spécifique ? D’un identifiant spécifique ?
+
 classe spécifique : . - exemple : .classe{}
 identifiant spécifique : # - exemple : #identifiant{}
+
 Définir le responsive design
+
 Adapte le contenu desktop d'un site à tout type d'écran
+
 Qu’est-ce que le templating ?
+
 Permet la gestion du contenu commun à plusieurs pages sur un seul et même fichiers partagé entre ces mêmes pages
+
 Qu’est-ce qu’une fonction anonyme en Javascript ? !! réponse à venir !!
+
 Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?
+
 push()
+
 Qu’est-ce qu’un « media query » ?
+
 Un media query (@media) permet de définir le style d'un contenu en fonction d'une taille d'écran spécifiée
+
 Qu’est-ce qu’un pseudo élément en CSS ?
+
 Cible et stylise un élément spécifique (ex : p::first-letter {}) sans toucher au code HTML de la page
-Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalent !! réponse à venir !!
+
+Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalent !!
+
+Framework CSS simplifiant la mise en place du responsive par l'utilisation de classes prédéfinies reliées à des sélécteurs prédéfinis.
+Equivalents : Tailwind CSS, Pure CSS
+
 Quand un formulaire HTML est créé, quelles sont les 2 méthodes qui peuvent lui être associées ? Donner la différence entre ces 2 méthodes
+
 POST : passe les informations du formulaire dans le corps des requêtes du code
 GET : passe les informations du formulaire dans l'URL de la page
+
 UX UI
+
 Quelle est la différence entre UX Design et UI Design ?
+
+UX design : Experience Utilisateur - s'intéresse à la manière dont l'utilisateur interagit avec le produit
+UI Design : Interface Utilisateur - s'interesse à l'apparence directe de l'interface (bouton, police, couleur, ...
+)
 Qu’est-ce qu’un wireframe ?
+
+Représentation visuelle simple de l'interface utilisateur
+
 Qu’est-ce qu’un prototype ?
+
+Première version intéractive d'un produit plus aboutie qu'un wireframe d'une application 
+
 Qu’est-ce que la hiérarchie visuelle en UI Design ?
+
+Organisation visuelle des éléments d'une application permettant de guider l'utilisateur
+
 Qu’est-ce que l’accessibilité en UX Design ?
+
+La mise en place d'interaction permettant une meilleure prise en main de l'application par les personnes handicapées
+
 Qu’est-ce qu’une grille de mise en page ?
+
+Ensemble de lignes et de colonnes utilisés pour structurer des éléments
+
 Qu’est-ce que la notion d’affordance en UX Design ?
+
+Lorsqu'un élément suggère son utilisation par son apparence
+
 Qu’est-ce qu’un « mobile first design » ?
+
+Le fait de penser le design d'une app d'abord pour une utilisation mobile plutot qu'une utilisation desktop 
+
 Programmation orientée objet (POO)
+
 Donner une définition de la programmation orientée objet
+
 méthode de programmation basé sur la création et la définition des propriétés et des méthodes d'une classe permettant la création d'objets
+
 Qu’est-ce qu’une classe ? Comment la déclare-t-on ?
+
 modèle pour créer des objets définissant les méthodes et les propriétés de ceux-ci
+
 Qu’est-ce qu’un objet ?
+
 entité regroupant les propriétés et méthodes de la classe qui le défini
+
 Définir la notion de propriété / attribut / méthode
-propriété : représente la variable associé à un objet et définie dans sa classe
-attribut : !! réponse à venir !!
+
+propriété : contrôle l'accès et la modification d'un attribut (getters/setters)
+attribut : variables définies représentant les données d'une classe
 méthode : fonction définie dans la classe interprétant le comportement de l'objet
 
 Qu’est-ce que la visibilité d’une propriété ou d’une méthode ? Citer les différents types de visibilité
-la visibilité détermine la portée d'utilisation d'une propriété ou d'une méthode. Private : utilisable que la classe définie Public : utilisable n'importe où Protected : utilisable par sa classe et ses childs (son héritage)
+
+la visibilité détermine la portée d'utilisation d'une propriété ou d'une méthode. 
+
+Public : utilisable partout
+Private : utilisable que la classe définie Public : utilisable n'importe où Protected : utilisable par sa classe et ses childs (son héritage)
+
 Quelle est la méthode spécifique utilisée pour créer un nouvel objet à partir d’une classe ?
+
 $objet = new Nom_Classe();
+
 Qu’est-ce que l’encapsulation ?
+
+consiste à protéger les données d'un objet en limitant leur accès direct. Les données sont rendues privées et leur accès et modification controlé par des getters et des setters
+
 Que signifie « étendre une classe » ? Quelle est le concept clé mis en œuvre ? Donner un exemple
+
+Le fait de créer une classe enfant depuis une classe parent. Le concept d'Héritage est mis en oeuvre.  
+
+Class Parent {}
+Class Enfant Extends Parent {}
+
 Définir l’opérateur de résolution de portée
+
+opérateur de résolution de portée = ::
+Permet d'accéder à des méthodes des classes parents 
+
 Définir une méthode / propriété statique
+
+Methode / Propriété accessible sans avoir besoin de créer une instance de cette classe 
+
 Définir le polymorphisme en POO
+
+!!! Réponse à venir !!!
+
 Définir une méthode / classe abstraite ?
+
+Une méthode abstraite est défini dans une classe abstraite parent, dont le fonctionnement sera propre aux enfants 
+
 Définir le chaînage de méthodes
+
+permet d'éxécuter plusieurs actions sur un objet dans une seule ligne avec $this
+
 Qu’est-ce que la méthode __toString() ? Existe-t-il d’autres méthodes « magiques »
+
+__tostring définis comment un objet se convertira en chaine de caractères
+exemple de méthodes magiques :
+__construct(), __get($property, $value), __invoke(), _isset() et unset()
+
 Qu’est-ce qu’un « autoload » ?
+
+permet de charger automatiquement les classes d'un script, plus besoin de les inclures manuellement
+
 Comment appelle-t-on en français les « getters » et les « setters » ?
+
+getters : accesseurs et setters: mutateurs
+
 Qu’est-ce que la sérialisation en PHP ?
+
+Converti un objet en chaine de caractère pour le stocker 
+Exemple : 	$personne = new Personne("Alice", 25);
+			$chaine = serialize($personne);
+
 Architecture
-Qu’est-ce que l’architecture client / serveur ? Grâce à quel type de requête peut-on interroger le serveur. Définir l’acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence
+
+
+Qu’est-ce que l’architecture client / serveur ? Grâce à quel type de requête peut-on interroger le serveur.
+
+Modèle ou le client et le serveur collaborent :
+Client : Navigateur Web - envois une requete
+Serveur : renvoi l'information demandé par le client 
+Requête : HTTP / HTTPS
+
+Définir l’acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence
+
+HyperText Transfer Protocol - HyperText Transfer Protocol Secure 
+HTTPS chiffre les données tranférées entre le client et le serveur
+
 Donner la définition d’un design pattern. Citer au moins 3 exemples de design pattern
+
+Modèle de conception réutilisable et éprouvé permettant d'organiser son code.
+Exemple : Singleton, Observer, Factory Method
+
 Qu’est-ce que l’architecture MVC ?
+
+Modèle Vue Contrôleur. Modèle de conception séparant la logique métier (Model), l'affichage (View) et les interactions (Controller). 
+
 Quel est le rôle de chaque couche du design pattern MVC : Model, View, Controller ?
+
+Model : Gère l'accès à la base de données
+View : Gère et génère l'affichage des données
+Controller : Reçoit les requêtes, appelle  le model et récupère les données pour choisir la view à adopter
+
 Quels sont les avantages de l’architecture MVC ?
+
+Sépare les responsabilités, Maintenance facilitée
+
 Existe-t-il des variantes à l’architecture MVC ?
+
+Oui, l'architecture MVP : Modèle Vue Présentateur
+
 Qu’est-ce qu’une API ? Définir l’architecture REST
+
+API : Application Programming Interface - Interface qui permet à deux applications de communiquer entre elles. Représente un enemble de règles pour accéder aux fonctionnalités d'une application
+Representational State transfer, permet à des applications de communiquer entre elles via des requêtes HTTP
+
 Modélisation - Base de données
 Qu’est-ce que la modélisation de données ? Définir la méthode Merise
 Quelles sont les 3 étapes principales de la méthode Merise ? a. Analyse, conception et réalisation b. Planification, exécution et contrôle c. Création, modification et suppression
@@ -214,5 +404,8 @@ Qu’est-ce qu’un test unitaire ?
 Quelle est l'unité de code testée lors d'un test unitaire ?
 Quelles sont les caractéristiques d'un bon test unitaire ?
 Qu'est-ce qu'une assertion dans un test unitaire ?  
+
+
 English
+
 1) What does JavaScript enable you to do on a website ? a. Add interactive behavior and dynamic content b. Define the layout and design of web pages c. Handle server-side operations 2) Which programming language is primarily used for server-side web development ? a. PHP b. JavaScript c. HTML 3) What is the purpose of a web browser ? a. To render and display web pages b. To execute serve-side code c. To manage databases 4) What is the difference between GET and POST methods in HTTP ? a. GET retrieves data from a server, while POST submits data to a server b. GET submits data to a server, while POST retrieves data from a server c. GET and POST methods are interchangeable 5) What is the purpose of version control systems (e.g., Git) in web development ? a. To track changes and manage collaborative development b. To optimize website loading speed c. To handle server-side scripting 6) What is the purpose of a framework in web development ? a. To provide a structured environment for building web applications b. To handle network protocols and data transfer c. To create visual designs and layouts for websites 7) What does NoSQL stand for ? a. Not Only SQL b. Non-Structured Query Language c. New Object-Oriented Language 8) Which of the following is a characteristic of NoSQL databases ? a. Strict schema enforcement b. Support for complex transactions c. Scalability and flexible data models
