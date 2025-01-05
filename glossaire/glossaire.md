@@ -121,7 +121,9 @@ Quelle balise HTML permet de créer un lien hypertexte ?
 
 <a href="exemple.php">nom_du_lien</a>
 
-Qu’est-ce qu’une requête AJAX ? <strong>!! réponse à venir !!</strong>
+Qu’est-ce qu’une requête AJAX ?
+
+(Asynchronous JavaScript and XML) Technique utilisée pour envoyer et recevoir des données entre le client et le serveur sans recharger la page
 
 Quel sélecteur CSS permet de sélectionner tous les éléments d’une 
 classe spécifique ? D’un identifiant spécifique ?
@@ -137,7 +139,9 @@ Qu’est-ce que le templating ?
 
 Permet la gestion du contenu commun à plusieurs pages sur un seul et même fichiers partagé entre ces mêmes pages
 
-Qu’est-ce qu’une fonction anonyme en Javascript ? !! réponse à venir !!
+Qu’est-ce qu’une fonction anonyme en Javascript ?
+
+Fonction qui n’a pas de nom et utilisée immédiatement
 
 Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?
 
@@ -249,7 +253,7 @@ Methode / Propriété accessible sans avoir besoin de créer une instance de cet
 
 Définir le polymorphisme en POO
 
-!!! Réponse à venir !!!
+Permet à différentes classes d’avoir une méthode avec le même nom, mais avec des comportements différents selon le type d’objet qui l’appelle
 
 Définir une méthode / classe abstraite ?
 
@@ -323,89 +327,429 @@ API : Application Programming Interface - Interface qui permet à deux applicati
 Representational State transfer, permet à des applications de communiquer entre elles via des requêtes HTTP
 
 Modélisation - Base de données
+
 Qu’est-ce que la modélisation de données ? Définir la méthode Merise
-Quelles sont les 3 étapes principales de la méthode Merise ? a. Analyse, conception et réalisation b. Planification, exécution et contrôle c. Création, modification et suppression
+
+processus de structuration et d'organiser les données d'un système pour représenter ses entités, leurs attributs, et leurs relations.
+méthode d'analyse de données sur 3 niveaux : conceptuel, organisationnel et physique pour modéliser les données (MLD)
+
+Quelles sont les 3 étapes principales de la méthode Merise ? 
+
+a. Analyse, conception et réalisation 
+
 Qu’est-ce qu’un modèle conceptuel de données (MCD) en Merise ?
+
+représentation abstraite des données d'un système, mettant en avant les entités, et les relations
+
 Qu’est-ce qu’un modèle logique de données (MLD) en Merise ?
-Donner la définition des mots suivants : a. Entité b. Relation c. Cardinalité d. Clé primaire / clé étrangère
+
+Modèle reprenant le MCD et intégrant les clés primaires et étrangères et les types de données
+
+Donner la définition des mots suivants : 
+
+a. Entité : Représente un objet 
+b. Relation : Lien logique entre deux entités
+c. Cardinalité :  Indique le nombre minimal et maximal de relations possibles entre les entités
+d. Clé primaire / clé étrangère : 
+	Primaire : Identifiant unique d'une entité ou table
+	Etrangère : Attribut reliant une table à une autre via une clé primaire
+
 Que devient une relation de type « Many To Many » dans le modèle logique de données ?
+
+Devient une table associative
+
 Qu’est-ce qu’une base de données ?
-Définir les notions suivantes : a. SQL b. MySQL c. SGBD (donner 2 exemples de SGBD)
-Dans une base de données, les données sont stockées dans des ___. Celles-ci sont constituées de lignes appelées ___ et de colonnes appelées ___
+
+Une base de données est un ensemble de données stockées dans des tables représentant les entités d'un MCD
+
+Définir les notions suivantes : 
+a. SQL : (Structured Query Language) langage utilisé pour interroger, manipuler, et gérer les bases de données relationnelles
+b. MySQL : système de gestion de base de données relationnelle open-source, utilisé pour stocker et gérer des données
+c. SGBD (donner 2 exemples de SGBD) : (Système de Gestion de Base de Données) : Un SGBD est un logiciel permettant de stocker, gérer et interroger des bases de données
+	ex : MySQL et PostgreSQL
+
+Dans une base de données, les données sont stockées dans des tables. Celles-ci sont constituées de lignes appelées enregistrement et de colonnes appelées attribut
+
 Quelle est la différence entre une base de données relationnelle et non relationnelle ?
+
+Relationnelle : Utilise des tables avec des schémas fixes, des relations entre les entités, et des données stockées selon des modèles rigides
+
+Non Relationnelle : Ne repose pas sur des tables et schémas fixes,  Stocke les données sous forme de documents, graphes ou clés-valeurs
+
 Qu’est-ce qu’une jointure dans une base de données ? En existe-t-il plusieurs ? Si oui lesquelles ?
+
+combine les données de deux ou plusieurs tables en fonction d'une clé commune
+
+Jointure Interne (INNER JOIN) et Jointure externe (LEFT JOIN / RIGHT JOIN)
+
 A quoi sert une vue dans une base de données ?
+
+permet de créer une "table virtuelle" qui affiche des données provenant de plusieurs tables ou d'une requête spécifique, sans modifier les données originales.
+
 Qu’est-ce que l’intégrité référentielle dans une base de données ?
+
+veille à ce que les relations entre les tables respectent les contraintes définies, en empêchant l'insertion, la mise à jour ou la suppression de données qui violeraient ces relations
+
 Quelles sont les fonctions d’agrégation en SQL ?
+
+SUM - AVG - COUNT - MIN - MAX - GROUP BY
+
 Qu’est-ce qu’un CRUD dans le contexte d’une base de données ?
-Quelles sont les clauses qui permettent de : a. Insérer un nouvel enregistrement dans une table b. Modifier un enregistrement dans une table c. Supprimer un enregistrement dans une table d. Supprimer la base de données e. Filtrer les résultats d’une requête SQL f. Trier les résultats d’une requête SELECT g. Regrouper les résultats d'une requête SELECT en fonction d'une colonne spécifique h. Concaténer 2 chaînes de caractères
+
+Create Read Update Delete
+
+Quelles sont les clauses qui permettent de : 
+a. Insérer un nouvel enregistrement dans une table : INSERT INTO
+b. Modifier un enregistrement dans une table : UPDATE
+c. Supprimer un enregistrement dans une table : DELETE FROM
+d. Supprimer la base de données : DROP
+e. Filtrer les résultats d’une requête SQL : WHERE
+f. Trier les résultats d’une requête SELECT : ORDER BY
+g. Regrouper les résultats d'une requête SELECT en fonction d'une colonne spécifique : GROUP BY
+h. Concaténer 2 chaînes de caractères : CONCAT()
+
+
 Comment se connecter à une base de données en PHP ? Quelle est la classe native utilisée ?
+
+Utilisation de la classe PDO
+
+voir exemple ici : 
+
+$dsn = 'mysql:host=localhost;dbname=nom_base_de_donnees';
+$username = 'utilisateur';
+$password = 'mot_de_passe';
+
+try {
+    $pdo = new PDO($dsn, $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connexion réussie !";
+} catch (PDOException $e) {
+    echo "Erreur de connexion : " . $e->getMessage();
+}
+
+PDO permet de connecter et d’interagir avec différents types de bases de données de manière uniforme.
+
 Symfony
+
 Qu’est-ce que Symfony ?
+
+Framework PHP, permet une strucutre cohérente et offre des outils facilitant la création d'application web
+
 Sur quel langage de programmation et design pattern repose Symfony ?
+
+Language : PHP 
+Design pattern : MVC
+
 Quelle est la dernière version en date de Symfony ?
+
+8.1
+
 Qu’est-ce qu’un bundle ?
+
+extension Symfony regroupant des fonctionnalités spécifiques
+
 Quel est le moteur de template utilisé par défaut dans Symfony ?
+
+TWIG
+
 Qu’est-ce qu’un ORM ? Quel est son utilité et comment s’appelle-t-il au sein de Symfony ?
+
+ORM : Objet Relational Mapping - relie des objets à des tables d'une base de données
+Sur Symfony : Doctrine
+
 Qu’est-ce que l’injection de dépendances ? Quel est l’outil utilisé dans ce contexte et quel fichier contient l’intégralité des dépendances du projet ?
+
+design pattern qui permet de déléguer la création et la gestion des dépendances à un conteneu. 
+Fichier : Config/service.yaml
+
 Que permet le bundle Maker au sein de Symfony ?
+
+Permet de créer automatiquement des entités, des formulaires, des controleurs
+
 Quel est le langage de requêtage exploité au sein d’un projet Symfony ?
+
+DQL (Doctrine Query Langage)
+
 Quel est le composant qui garantit l’authentification et l’autorisation des utilisateurs ?
+
+ Symfony Security
+
 Sécurité
+
 Qu’est-ce que l’injection SQL ? Comment s’en prémunir ?
+
+Attaque consistant à injecter du code SQL dans un formulaire
+utiliser des requetes préparées (prepare) - Limiter les accès et les permissions - Sinon, utiliser un ORM
+
 Qu’est-ce que la faille XSS ? Comment s’en prémunir ?
+
+(Cross Site Scipting) Permet à un attaquant d’insérer du code malveillant (souvent JavaScript) dans une page web. 
+Filtrer les données filter_var() OU htmlspecialchar() - Utiliser des framework incluant des protections XSS
+
 Qu’est-ce que la faille CSRF ? Comment s’en prémunir ?
+
+(Cross-Site Request Forgery) permet à un attaquant de forcer un utilisateur à effectuer involontairement une action non désirée sur une application web, comme soumettre un formulaire ou exécuter une commande, souvent sans que l'utilisateur ne s'en rende compte
+Utiliser un token unique généré pour chaque requete et vérifier ce token sur les actions sensibles - Sur Symfony, activer la protection CSRF
+
 Définir l’attaque par force brute et l’attaque par dictionnaire
+
+Force Brute : essaie toutes les combinaisons possibles pour deviner un mot de passe
+Dictionnaire : utilise une liste de mots connus (comme des noms, des mots courants, ou des expressions) pour deviner un mot de passe 
+
 Existe-t-il d’autres failles de sécurité ? Citer celles-ci et expliquer simplement leur comportement
+
+Man-in-the-Middle (MitM) : Hacker intercepte les communications entre un utilisateur et un serveur pour voler des données, les manipuler ou les modifier
+
 A quoi servent l’authentification et l’autorisation dans un contexte d’application web ?
+
+Authentification :
+But : Elle permet de vérifier l’identité des utilisateurs en demandant des informations comme un nom d'utilisateur et un mot de passe
+Objectif : S’assurer que l’utilisateur est bien qui il prétend être avant d’accéder à des ressources sécurisées
+
+Autorisation :
+But : l’autorisation contrôle les actions que l’utilisateur est autorisé à effectuer
+Objectif : Assigner les droits d’accès (lecture, écriture, suppression, etc.) en fonction du rôle ou du statut de l’utilisateur
+
 Définir la notion de hachage d’un mot de passe et citer des algorithmes de hachage
+
+processus qui transforme un mot de passe en une chaîne de caractères difficile à inverser. Existe des algo de hashage faibles et forts
+
+faibles : SHA256 et MD5 
+Forts : Argon2i et Bcrypt
+
 Qu’est-ce qu’une politique de mots de passe forts ?
+
+critères que doivent respecter les utilisateurs pour créer des mots de passe sécurisés imposés par une REGEX
+
+12 caractères minimum 
+Une Maj + Un symbole + Un chiffre minimum
+
 Qu’est-ce que l’hameçonnage ?
+
+Phishing - hacker envoie des emails ou messages qui semblent légitimes, mais sont en réalité destinés à voler des informations personnelles telles que des mots de passe, des numéros de carte bancaire, ou des données sensibles
+
 Définir la « validation des entrées »
+
+consiste à contrôler et vérifier les données entrées par les utilisateurs pour s’assurer qu’elles respectent certaines règles avant de les traiter ou de les stocker dans une application
+
+Objectifs de la validation des données : 
+éviter les injections XSS et SQL
+Assurer que les données saisies sont valides et attendue
+
 RGPD
+
 Qu’est-ce que le RGPD ?
+
+règlement européen visant à protéger la vie privée et les données personnelles
+
 Quel est son objectif principal ?
+
+renforcer la protection des données personnelles et d’accorder aux individus plus de contrôle sur leurs informations
+
 Quelle est la date d’entrée en vigueur du RGPD ?
+
+25 mail 2018
+
 Quelles sont les sanctions possibles en cas de non-respect du RGPD ?
+
+20 millions d'€ ou 4% du CA annuel mondial
+
 En France, quel est l’autorité administrative qui s’occupe de faire appliquer le RGPD ?
+
+CNIL - Commission Nationale Informatique et Liberté
+
 Quel est le consentement valide selon le RPGD ?
+
+Être libre, spécifique, éclairé et univoque
+Reposer sur une action affirmative claire de la part de l’utilisateur
+Être donné sans contrainte et être révocable à tout moment
+
 Qu’est-ce qu’une politique de confidentialité ?
+
+explique comment une organisation collecte, utilise, protège et partage les données personnelles des utilisateurs
+doit informer clairement les individus sur leurs droits et sur la manière dont leurs données sont traitées
+
 Quelle est la durée de conservation maximale des données personnelles selon le RGPD ?
+
+Il n’y a pas de limite fixe, mais les données doivent être supprimées une fois la finalité atteinte
+
 Quels sont les droits des utilisateurs selon le RGPD ?
+
+Droit d’accès : Accéder à leurs données personnelles.
+Droit de rectification : Corriger les données incorrectes
+Droit à l’effacement (droit à l’oubli) : Demander la suppression de leurs données
+Droit à la portabilité : Transférer leurs données vers un autre service
+Droit d’opposition : S’opposer au traitement de leurs données
+Droit à la limitation : Demander que le traitement de leurs données soit limité
+
 Qu’est-ce que le principe de minimisation des données selon le RGPD ?
+
+stipule que seules les données personnelles strictement nécessaires pour la finalité poursuivie doivent être collectées et traitées
+
 SEO
+
 Qu’est-ce que le SEO ?
+
+(Search Engine Optimization) désigne l’ensemble des techniques utilisées pour améliorer la visibilité d’un site web sur les moteurs de recherche,
+
 Quel est l’objectif principal du SEO ?
+
+favoriser un meilleur classement dans les résultats de recherche
+
 Existe-t-il plusieurs types de référencement ? Lesquels ?
+
+SEO (Search Engine Optimization) : Optimisation pour les moteurs de recherche
+SEA (Search Engine Advertising) : Publicité payante sur les moteurs de recherche, comme Google Ads
+
 Qu’est-ce que la densité de mots-clés en SEO ?
+
+pourcentage d’un mot-clé ou d’une expression par rapport au nombre total de mots sur une page. Evalue si une page est optimisée pour un mot-clé spécifique
+
 Qu’est-ce qu’une balise « alt » ?
+
+fourni une description textuelle d’une image. Permet une meilleure accessibilité et un meilleur référencement
+
 Qu’est-ce que la balise « meta description » ?
+
+court texte destiné à décrire le contenu d’une page web
+
 Qu’est-ce que le « nofollow » en SEO ?
+
+attribut utilisé pour indiquer aux moteurs de recherche de ne pas suivre un lien
+
 Quelle est l'importance du contenu de qualité pour le référencement d'un site web ?
+
+Répond aux besoins des utilisateurs : Fournit des informations utiles et pertinentes
+Augmente la durée de visite : Diminue le taux de rebond et améliore l’expérience utilisateur
+Optimise le SEO : Favorise un meilleur classement en répondant aux critères de pertinence des moteurs de recherche
+
 Pourquoi est-il important d'utiliser des balises de titre (h1, h2, h3, etc.) de manière structurée ?
+
+Améliore la lisibilité du contenu : Organise et hiérarchise les informations
+Renforce le SEO : Aide les moteurs de recherche à comprendre la structure de la page et le sujet principal
+
 Quelle est la recommandation pour les URL d'un site web bien référencé ?
+
+Clarté et simplicité : Utiliser des URL courtes et lisibles qui décrivent le contenu
+Utiliser des mots-clés : Inclure des termes pertinents pour le SEO
+
 Qu'est-ce que le maillage interne et pourquoi est-il important pour le référencement ?
+
+Lie des pages de votre site entre elles pour guider les visiteurs et les moteurs de recherche
+Améliore l’indexation : Aide les moteurs de recherche à découvrir et à indexer les pages
+Réduit le taux de rebond : Amène les utilisateurs à naviguer plus profondément sur le site
+
 Qu'est-ce que l'optimisation des images pour le référencement ?
+
+Consiste à améliorer la visibilité et la performance des images sur un site web
+Utilisation de balises "alt"
+Réduire la taille des images pour améliorer la vitesse de chargement
+Utiliser des formats appropriés comme JPEG, PNG, ou WebP pour le web
+
 Qu'est-ce qu'un plan de site (sitemap) et pourquoi est-il important pour le référencement ?
+
+Liste toutes les pages d’un site web
+Améliore l’indexation 
+Guide les robots
+Assure la couverture complète
+
 Gestion de projets - DevOps
+
 Qu’est-ce que la gestion de projet ?
+
+Consiste à planifier, organiser, et suivre les activités d’un projet pour atteindre ses objectifs, tout en respectant les contraintes de temps, coût, et ressources
+
 Qu’est-ce qu’une méthode Agile de gestion de projet ?
-Expliquer la méthode MoSCoW en quelques lignes et citer ses avantages
+
+Gestion de projet est une approche flexible et itérative
+Divise le projet en sprints ou itérations pour améliorer l’efficacité et la qualité
+
+Expliquer la méthode MoSCoW en quelques lignes et citer ses 
+
+Outil de priorisation utilisé pour classer les tâches en fonction de leur importance
+
+Must-Have (Obligatoire) : Ce qui est essentiel pour le succès du projet
+Should-Have (Souhaitable) : Ce qui est important, mais pas critique
+Could-Have (Peut-être) : Ce qui est utile, mais non indispensable
+Won’t-Have (Non prévu) : Ce qui ne sera pas traité pour l’instant
+
 A quoi sert la méthodologie MVP ? Citer les caractéristiques clés
+
+(Minimum Viable Product) - sert à créer une version initiale d’un produit avec les fonctionnalités essentielles
+
 Qu’est-ce que la planification itérative ?
+
+Consiste à diviser le projet en phases ou itérations courtes, où chaque cycle permet de planifier, développer, tester, et livrer un sous-ensemble fonctionnel
+
 Citer 3 méthodes Agiles dans le cadre d’un projet informatique
+
+KANBAN, TRELLO, SCRUM
+
 Qu’est-ce qu’une réunion de revue de projet ?
+
+Rencontre où l’équipe évalue et examine les progrès réalisés sur le projet, les résultats atteints, et les objectifs restants
+
 Qu’est-ce qu’un livrable dans un projet ?
+
+Ce qui est produit ou créé à la fin d’un projet
+
 Quels sont les 3 piliers SCRUM ? Définir chacun d’entre eux
+
+Engagement (Commitment) :
+Toutes les parties prenantes s’engagent à suivre et à respecter les objectifs du sprint, à collaborer et à livrer des résultats de qualité
+
+Transparence :
+Les informations clés sur le projet, le progrès, et les résultats sont facilement accessibles et compréhensibles pour toutes les parties concernées
+
+Inspection :
+Les progrès sont vérifiés fréquemment pour garantir que le travail suit le chemin prévu, et les ajustements sont faits en fonction des retours ou des évolutions
+
 Qu’est-ce que le DevOps et quel est son objectif principal ?
+
+Ensemble de pratiques visant à améliorer la collaboration et l'intégration entre les équipes de développement (Dev) et d'exploitation
+
 Qu’est-ce que l’intégration continue ?
+
+Patique DevOps qui consiste à intégrer et tester automatiquement le code des développeurs fréquemment
+
 Qu’est-ce que Docker ? Et en quoi est-il utile dans le cadre du DevOps ?
+
+Outil qui permet de regrouper une application et toutes ses dépendances dans un « conteneur » pour qu'elle fonctionne partout de la même manière
+
 Qu’est-ce qu’un test unitaire ?
+
+Méthode de test qui vérifie le bon fonctionnement d'un petit morceau de code, comme une fonction ou une classe, en isolation
+
 Quelle est l'unité de code testée lors d'un test unitaire ?
+
+?? Répondre ici ??
+
 Quelles sont les caractéristiques d'un bon test unitaire ?
+
+Isolation : le test ne doit pas dépendre d'autres parties du code
+Fiabilité : il doit toujours donner le même résultat, peu importe l’environnement
+Exactitude : le test doit vérifier un comportement spécifique
+Facilité : il doit être rapide et ne pas interférer avec d’autres tests
+Répétabilité : peut être exécuté plusieurs fois avec le même résultat
+
 Qu'est-ce qu'une assertion dans un test unitaire ?  
 
+Compare le résultat du test avec ce que l'on attend, et signale si le test échoue
 
 English
 
-1) What does JavaScript enable you to do on a website ? a. Add interactive behavior and dynamic content b. Define the layout and design of web pages c. Handle server-side operations 2) Which programming language is primarily used for server-side web development ? a. PHP b. JavaScript c. HTML 3) What is the purpose of a web browser ? a. To render and display web pages b. To execute serve-side code c. To manage databases 4) What is the difference between GET and POST methods in HTTP ? a. GET retrieves data from a server, while POST submits data to a server b. GET submits data to a server, while POST retrieves data from a server c. GET and POST methods are interchangeable 5) What is the purpose of version control systems (e.g., Git) in web development ? a. To track changes and manage collaborative development b. To optimize website loading speed c. To handle server-side scripting 6) What is the purpose of a framework in web development ? a. To provide a structured environment for building web applications b. To handle network protocols and data transfer c. To create visual designs and layouts for websites 7) What does NoSQL stand for ? a. Not Only SQL b. Non-Structured Query Language c. New Object-Oriented Language 8) Which of the following is a characteristic of NoSQL databases ? a. Strict schema enforcement b. Support for complex transactions c. Scalability and flexible data models
+1) What does JavaScript enable you to do on a website ? a. Add interactive behavior and dynamic content
+
+2) Which programming language is primarily used for server-side web development ? a. PHP
+
+3) What is the purpose of a web browser ? a. To render and display web pages
+
+4) What is the difference between GET and POST methods in HTTP ? a. GET retrieves data from a server, while POST submits data to a server
+
+5) What is the purpose of version control systems (e.g., Git) in web development ? a. To track changes and manage collaborative development 
+
+6) What is the purpose of a framework in web development ? a. To provide a structured environment for building web applications
+
+7) What does NoSQL stand for ? b. Non-Structured Query Language 
+
+8) Which of the following is a characteristic of NoSQL databases ? c. Scalability and flexible data models
